@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | Chai aur Code</title>
+    <style>
+        .container{
+            padding:6px;
+            margin:4px;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+        }
+        #btn{
+            background-color: black;
+            color:white;
+            padding:10px;
+            border-radius: 4px;
+            margin-left:130px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div class="container">
+        <form>
+            <label for="height">Height in cm:</label>
+            <input type="number" id="height">
+            <br>
+            <label for="weight">Weight in Kg:</label>
+            <input type="number" id="weight">
+            <br>
+            <button id="btn">Calculate</button>
+            <!-- <input type="submit"> -->
+            <div id="result"></div>
+            <div class="guide">
+                <h1>BMI Weight Guider</h1>
+                <p>Under Weight = Less than 18.6</p>
+                <p>Normal Range = Between 18.6 and 24.9</p>
+                <p>Over Weight = Greater than 24.9</p>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
